@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Download, Github, Linkedin, Mail, Phone, MapPin, Code, Brain, Zap, ChevronDown, ExternalLink, Star, GitFork, Calendar, Award, Briefcase, GraduationCap, User, Sparkles } from 'lucide-react';
+import { Download, Github, Linkedin, Mail, Phone, MapPin, Code, Brain, Zap, ChevronDown, ExternalLink, Star, GitFork, Calendar, Sparkles } from 'lucide-react';
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  // const [activeSection, setActiveSection] = useState('home'); // removed unused variable
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -87,7 +87,7 @@ const Portfolio = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(sectionId);
+      // setActiveSection(sectionId); // removed unused setter
     }
   };
 
@@ -311,10 +311,10 @@ const Portfolio = () => {
       <section id="contact" className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
-            Ready to bring your AI ideas to life? I'm always excited to discuss new opportunities and innovative projects.
+            Ready to bring your AI ideas to life? I&apos;m always excited to discuss new opportunities and innovative projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <a href="mailto:alex@example.com" className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25">
